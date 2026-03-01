@@ -1,0 +1,497 @@
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    direction: rtl;
+    font-family: sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+
+header {
+    display: flex;
+    position: fixed;
+    z-index: 2;
+    padding: 2vh;
+    padding-right: 0px;
+    align-items: center;
+    justify-content: flex-start;
+    height: 90px;
+    width: 100%;
+
+    background-color: rgb(255, 255, 255);
+
+}
+
+section {
+    padding-top: 27vh;
+}
+
+#secPic {
+    padding-top: 0px;
+}
+
+#helper {
+    max-width: 23vw;
+    margin: auto;
+}
+
+
+
+#logo {
+    height: 80%;
+    margin: 6px 29px 0vw 0vw;
+}
+
+#divOfdivTool {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+
+}
+
+#divToolBox {
+    background-color: white;
+    border: rgb(47, 47, 47) solid 2px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    padding: 13px;
+
+}
+
+.toolBoxItem {
+    font-size: 15px;
+    text-decoration: unset;
+    color: rgb(33, 33, 33);
+    margin: 0vh 20px;
+    padding: 2px 10px;
+}
+
+.toolBoxItem:hover {
+    color: rgb(124, 124, 124);
+}
+
+.activ {
+    border-right: 4px solid rgb(209, 187, 155);
+    font-weight: bold;
+}
+
+
+
+
+#instanImg {
+    background-color: rgb(51, 51, 51);
+    height: 80vh;
+}
+
+#bacImage {
+    height: 560px;
+    width: 100%;
+    object-fit: cover;
+}
+
+#replaceDiv {
+    position: relative;
+    top: -10px;
+    height: 10px;
+    background-color: rgb(255, 255, 255);
+    animation-name: changeWidth;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+
+}
+
+@keyframes changeWidth {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+
+}
+
+.divsInformation {
+    background-color: rgb(250, 250, 250);
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    margin: 0vh auto 0vh auto;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1), 0 4px 17px 0 rgba(0, 0, 0, 0.19);
+    line-height: 25px;
+}
+
+.titleInformation {
+    background-color: rgb(209, 187, 155);
+    text-align: center;
+    padding: 2vh 4vw;
+    font-size: 30px;
+    margin: 0vh 10vw 20px 10vw;
+    width: 120px;
+}
+
+.contentInformation {
+
+    margin-top: -30px;
+    padding: 40px 20px;
+    font-size: 20px;
+}
+
+.helpers {
+    height: 27vh;
+}
+
+#yeutzTitle {
+    margin: auto auto 20px auto;
+}
+
+#divOfCounselors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.oneCounselor {
+    background-color: white;
+    width: 200px;
+    height: 180px;
+    margin: 30px;
+}
+
+.counselorName {
+    padding: 10px;
+    border-bottom: 2px solid rgb(209, 187, 155);
+    margin: 5px 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.counslorDeatails {
+    font-weight: 100;
+    font-size: 15px;
+}
+
+
+#divAdd {
+    margin-bottom: 100px;
+    text-align: right;
+}
+
+#divOfDivAdd {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#divForm {
+    display: flex;
+    margin-top: 20px;
+    padding: 15px;
+    margin-left: 20px;
+
+}
+
+#allForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#ok {
+    background-color: rgb(209, 187, 155);
+    border: none;
+    border-radius: 8px;
+    padding: 7px 30px;
+    height: auto;
+    margin-top: 20px;
+
+}
+
+#ok:hover {
+    opacity: 0.8;
+}
+
+input[type="radio"] {
+    accent-color: rgb(40, 40, 40);
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+    margin: 2px;
+    padding: 10px;
+
+}
+
+
+
+
+#myTextarea {
+    border: rgb(47, 47, 47) solid 2px;
+    padding: 10px;
+    resize: vertical;
+    height: 62px;
+    border-width: 0.1px;
+    width: 300px;
+
+}
+
+.formDeatails {
+    padding-left: 4vw;
+
+    padding-right: 4vw;
+}
+
+#formDet1,
+#formDet2 {
+    border-left: 2px solid rgb(209, 187, 155);
+}
+
+#textOfAdd {
+    text-align: center;
+}
+
+@media only screen and (max-width: 1000px) {
+    #divForm {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #formDet1,
+    #formDet2 {
+        border-left: none;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+
+}
+
+
+#footerLinksDiv {
+    padding: 25px;
+    line-height: 2;
+    background-color: rgb(51, 51, 51);
+}
+
+
+#DivFooterCaption {
+    padding: 25px;
+    background-color: rgb(51, 51, 51);
+    color: rgb(211, 211, 211);
+
+}
+
+.footerLink {
+    font-size: 20px;
+    padding: 3px 25px;
+    margin: 5px;
+    color: white;
+    text-decoration: unset;
+    border-right: 2px solid rgb(255, 255, 255);
+
+}
+
+.footerLink:hover {
+    color: rgb(211, 211, 211);
+}
+
+#firstFooterLink {
+    border: none;
+}
+
+/*עמוד סיום תהליך הצטרפות*/
+
+#tankYouTextTitle {
+    font-size: 50px;
+    color: rgb(209, 187, 155);
+    font-weight: bold;
+}
+
+#tankYouTextContent {
+    font-size: 25px;
+}
+
+#tankYouSection {
+    min-height: 100vh;
+    margin: 0px 30px 0px 30px;
+}
+
+table {
+    margin: auto;
+    border-collapse: collapse;
+    width: 80%;
+    border: 1px solid #ddd;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+tr {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+
+td {
+    text-align: right;
+    font-size: 14px;
+    padding: 20px 10px;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+th {
+    text-align: right;
+    color: rgb(209, 187, 155);
+    padding: 20px 10px;
+}
+
+#headerTable {
+    background-color: #f1f1f1;
+
+}
+
+#buttonUp {
+    margin: 20px auto;
+    position: sticky;
+    bottom: 10px;
+    display: flex;
+    opacity: 0;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background-color: rgb(209, 187, 155);
+    color: black;
+    transition: opacity 0.3s ease, top 0.3s ease;
+}
+
+#iconChets {
+    color: black;
+    font-size: 25px;
+    transition: font-size 0.1s ease-in;
+}
+
+
+#iconChets:hover {
+    font-size: 30px;
+}
+
+#divOfHotels {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 120px;
+}
+
+.descriptionItem {
+    background-color: rgb(250, 250, 250);
+    height: 320px;
+    width: 220px;
+    margin: 30px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1), 0 4px 17px 0 rgba(0, 0, 0, 0.19);
+}
+
+.image-container {
+    width: 220px;
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+}
+
+.image-container img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.image-container:hover img {
+    transform: scale(1.25);
+}
+
+.placeName {
+    margin-top: 7px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.cityName {
+    margin: -20px 0px 5px 0px;
+    color: rgb(91, 92, 92);
+}
+
+.descriptionPlaceP {
+    padding: 0px 11px;
+    font-size: 14px;
+}
+
+hr {
+    background-color: rgb(209, 187, 155);
+    width: 70%;
+    height: 2px;
+    border: none;
+}
+
+
+
+#secParks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 120px;
+}
+
+@media only screen and (max-width: 870px) {
+    #divToolBox {
+        padding-left: 0px;
+        width: 120px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        border: none;
+        border-left: rgb(47, 47, 47) solid 2px;
+    }
+
+    #divOfdivTool {
+        justify-content: flex-end;
+        margin-left: 60px;
+    }
+
+    header {
+        height: 170px;
+        justify-content: space-around;
+    }
+
+    .activ {
+        border-right: none;
+        border-left: 4px solid rgb(209, 187, 155);
+    }
+
+    section {
+        padding-top: 220px;
+    }
+
+    #divOfHotels {
+        padding-top: 220px;
+    }
+
+    #secParks {
+        padding-top: 220px;
+    }
+}
+
+.pQwes {
+    font-weight: bold;
+}
+
+#textodot {
+    padding: 30px 30px;
+}
