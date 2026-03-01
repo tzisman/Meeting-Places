@@ -16,7 +16,7 @@ To view and interact with the project locally, simply open `index.html` in your 
 
 ```
 .
-├── HomePage.html
+├── index.html
 ├── index.js
 ├── style.css
 ├── images/
