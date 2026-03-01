@@ -10,7 +10,7 @@ This project provides a responsive web interface for managing meetings, with a d
 
 ## Getting Started
 
-To view and interact with the project locally, simply open `HomePage.html` in your web browser.
+To view and interact with the project locally, simply open `index.html` in your web browser.
 
 ## Project Structure
 
